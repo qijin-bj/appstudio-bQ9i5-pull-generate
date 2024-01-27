@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-f2ze
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/ex-registry-aeow-tenant/appstudio/dc-metro-map-f2ze@sha256:f8968250f50612558ca39fbb5cbba8684cec5ea5158af4382274d23273d80b4a
+        name: my-nodejs
+        resources: {}
+status: {}
